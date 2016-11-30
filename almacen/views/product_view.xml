@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="product_action" model="ir.actions.act_window">
+			<field name="name">Productos</field>
+			<field name="res_model">product</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="menu_product" name="Productos" action="product_action"/>
+	</data>
+</openerp>
