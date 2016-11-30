@@ -11,3 +11,4 @@ class Supplier(models.Model):
 	address = fields.Char(string = 'Direccion', required = True)
 	email = fields.Char(string = 'Correo E.', )
 	rfc = fields.Char(string = 'R.F.C.', required = True)
+	#store_supplier_id = fields.Many2one('store')

@@ -6,6 +6,20 @@
 			<field name="res_model">product</field>
 			<field name="view_mode">tree,form</field>
 		</record>
+		<record id='product_tree_view' model='ir.ui.view'>
+			<field name="name">Productos</field>
+			<field name="model">product</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="kind"/>
+					<field name="name"/>
+					<field name="perishable"/>
+					<field name='description'/>
+					<field name='price'/>
+				</tree>
+			</field>
+		</record>
 		<menuitem id="menu_product" name="Productos" action="product_action"/>
 	</data>
 </openerp>

@@ -26,6 +26,8 @@
        'views/product_view.xml',
        'views/supplier_view.xml',
        'views/purchase_view.xml',
+       'views/sale_view.xml',
+       
     ],
     # only loaded in demonstration mode
     'demo': [

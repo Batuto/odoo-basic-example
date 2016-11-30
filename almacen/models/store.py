@@ -9,4 +9,6 @@ class Store(models.Model):
 	lot = fields.Char(string='Lote')
 	quantity = fields.Integer(string='Cantidad')
 	expiration_date = fields.Date(string='Fecha de caducidad')
-	supplier_id = fields.M
+	#supplier_id = fields.One2many('supplier', 'rfc')
+	supplier_id = fields.Many2one('supplier')
+	
