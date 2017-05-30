@@ -11,7 +11,7 @@
 			<field name="model">product</field>
 			<field name="type">tree</field>
 			<field name="arch" type="xml">
-				<tree>
+				<tree editable='top'>
 					<field name="kind"/>
 					<field name="name"/>
 					<field name="perishable"/>
@@ -20,6 +20,28 @@
 				</tree>
 			</field>
 		</record>
+		
+		<record id='product_form_view' model='ir.ui.view'>
+			<field name="name">Productos</field>
+			<field name="model">product</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string='Productos Abarrotes'>
+					<group string='Se muestra producto'>
+						<group colspan='2' col='2'>
+							<field name="kind"/>
+							<field name="name"/>
+						</group>
+						<group colspan='4'>
+							<field name="perishable"/>
+							<field name='description'/>
+							<field name='price'/>
+						</group>
+					</group>	
+				</form>
+			</field>
+		</record>
+		
 		<menuitem id="menu_product" name="Productos" action="product_action"/>
 	</data>
 </openerp>

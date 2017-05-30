@@ -6,6 +6,27 @@
 			<field name="res_model">supplier</field>
 			<field name="view_mode">tree,form</field>
 		</record>
+
+		<record id='supplier_form_view' model='ir.ui.view'>
+			<field name='name'>Proveedores</field>
+			<field name='model'>supplier</field>
+			<field name='type'>form</field>
+			<field name='arch' type='xml'>
+				<form>
+					<group string='Datos de proveedor' col='2'> 
+					<group col='2'>
+						<h1><field name='name' nolabel='1' /></h1>
+					</group>	
+					<group colspan='2' col='2'>
+						<field name='rfc'></field>
+						<field name='email'/>
+						<field name='address'></field>
+						<field name='phone'></field>
+					</group>
+				</group>
+				</form>	
+			</field>
+		</record>
 		<menuitem id="menu_supplier" name="Proveedores" action="supplier_action"/>
 	</data>
 </openerp>

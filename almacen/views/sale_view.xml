@@ -2,7 +2,7 @@
 <openerp>
 	<data>
 		<record id="sale_action" model="ir.actions.act_window">
-			<field name="name">Ventas</field>
+			<field name="name">Ventas chidas</field>
 			<field name="res_model">sale</field>
 			<field name="view_mode">tree,form</field>
 		</record>
@@ -43,6 +43,27 @@
 				</tree>
 			</field>
 		</record>
+        <!--g
+        <record id="sale_sheet_view" model="ir.ui.view">
+            <field name="name">Item ventas</field>
+            <field name="model">sale</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Session form">
+                    <sheet>
+                        <group>
+                            <field name="datestamp"/>
+                            <field name="employee_id"/>
+                            <field name="customer_id"/>
+                        </group>
+                        <group>
+                            <field name="total"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        g-->
 		<menuitem id="menu_sale" name="Ventas" action="sale_action"/>
 	</data>
 </openerp>
